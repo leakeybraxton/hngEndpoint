@@ -6,4 +6,4 @@ RUN apt-get update && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
     composer install --no-interaction --no-dev --optimize-autoloader
 CMD ["apache2-foreground"]
-docker build -t your-image-name .
+docker build -t nginx .
